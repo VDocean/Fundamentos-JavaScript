@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Página de teste JS</title>
+        <script language="JavaScript">
+            let dia_hoje=prompt("Qual o dia hoje?","domingo")
+
+            // declara strings curtas
+            let agradavel = " é um dia muito agradável "
+            let pergunta = ", mas é hoje ou amanhã? "
+            let estudo = " é um ótimo dia para se estudar JavaScript"
+            let sono = ", mas também é um dia perfeito para se dormir."
+            // constrói strings longas
+            let dia_agradavel = dia_hoje + agradavel + pergunta
+            let dia_cansado = dia_hoje + estudo + sono
+            //modifica a aparencia das strings
+            let dia_agradavel_negrito=dia_agradavel.bold()
+            let sono_italico=dia_cansado.italics()
+            let agradavel_berrante=dia_agradavel.toUpperCase()
+            let sono_frio=dia_cansado.fontcolor("blue")
+
+        
+        </script>
+    </head>
+
+    <body>
+        <script language="JavaScript">
+            document.writeln(dia_agradavel_negrito + "<br>")
+            document.writeln(sono_italico + "<br>")
+            document.writeln(agradavel_berrante + "<br>")
+            document.writeln(sono_frio + "<br>")
+        </script>
+        
+    </body>
+</html>
